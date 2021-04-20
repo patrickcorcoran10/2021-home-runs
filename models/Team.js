@@ -2,48 +2,15 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const teamSchema = new Schema({
-    teamOwner: {type: String, required: true},
-    aprilRoster: [
-        {
-            playerName: {type: String},
-            previousHomeRunTotal: {type: Number},
-            currentMonthHomeRuns: {type: Number}
-
-        }
-    ],
-    mayRoster: [
-        {
-            playerName: {type: String},
-            previousHomeRunTotal: {type: Number},
-            currentMonthHomeRuns: {type: Number}
-
-        }
-    ],
-    juneRoster: [
-        {
-            playerName: {type: String},
-            previousHomeRunTotal: {type: Number},
-            currentMonthHomeRuns: {type: Number}
-
-        }
-    ],
-    julyRoster: [
-        {
-            playerName: {type: String},
-            previousHomeRunTotal: {type: Number},
-            currentMonthHomeRuns: {type: Number}
-
-        }
-    ],
-    augustRoster: [
-        {
-            playerName: {type: String},
-            previousHomeRunTotal: {type: Number},
-            currentMonthHomeRuns: {type: Number}
-
-        }
-    ],
-    septRoster: [
+    teamOwner: {type: String},
+    overallScore: {type: Number},
+    aprilScore: {type: Number},
+    mayScore: {type: Number},
+    juneScore: {type: Number},
+    julyScore: {type: Number},
+    augustScore: {type: Number},
+    septemberScore: {type: Number},
+    roster: [
         {
             playerName: {type: String},
             previousHomeRunTotal: {type: Number},
@@ -51,6 +18,7 @@ const teamSchema = new Schema({
 
         }
     ]
+    
 
 })
 
